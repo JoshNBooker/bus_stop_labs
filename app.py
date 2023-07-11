@@ -4,6 +4,8 @@ from bus_stop import BusStop
 
 bus1 = Bus(1, "Brunswick Road")
 
+print(f"the bus has left.{bus1.drive()}")
+
 print(bus1.passenger_number_check())
 
 bus1.pick_up("John")

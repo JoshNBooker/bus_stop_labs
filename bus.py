@@ -6,8 +6,8 @@ class Bus:
         self.destination = destination
         self.passengers = []
     
-    def drive():
-        return "Brum brum"
+    def drive(bus):
+        return " Brum brum"
     
     def passenger_number_check(self):
         return len(self.passengers)
@@ -22,7 +22,9 @@ class Bus:
         self.passengers.clear()
     
     def pick_up_from_stop(self, BusStop):
-        self.passengers.append(BusStop.queue)
-        BusStop.queue.clear()
-        print(f"{BusStop.name} is now empty. {self.passengers} have now boarded the bus")
+        print(f"{BusStop.queue} are waiting")
+        for passenger in BusStop.queue:
+            self.passengers.append(passenger)
+        BusStop.queue_clear()
+        print(f"{self.passengers} have now boarded the bus")
 
