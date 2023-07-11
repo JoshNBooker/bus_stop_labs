@@ -30,5 +30,6 @@ bus_stop1.queue_add("Janie")
 
 bus_stop1.queue_add("Fred")
 
+print(bus_stop1.queue)
+
 bus1.pick_up_from_stop(bus_stop1)
-print(bus1.passengers)

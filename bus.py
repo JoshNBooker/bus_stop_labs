@@ -23,4 +23,6 @@ class Bus:
     
     def pick_up_from_stop(self, BusStop):
         self.passengers.append(BusStop.queue)
+        BusStop.queue.clear()
+        print(f"{BusStop.name} is now empty. {self.passengers} have now boarded the bus")
 
