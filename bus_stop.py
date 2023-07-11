@@ -5,3 +5,7 @@ class BusStop:
     
     def queue_add(self, name):
         self.queue.append(name)
+    
+    def queue_clear(self):
+        self.queue.clear()
+    
