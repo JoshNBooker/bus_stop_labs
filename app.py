@@ -26,8 +26,10 @@ bus1.empty()
 bus_stop1 = BusStop("King's Road")
 
 bus_stop1.queue_clear()
-print(len(bus_stop1.queue))
+print(f"there are {len(bus_stop1.queue)} people waiting")
 
-print(bus_stop1.queue)
+bus_stop1.queue_add("John")
+bus_stop1.queue_add("Frank")
+bus_stop1.queue_add("Mary")
 
 bus1.pick_up_from_stop(bus_stop1)
